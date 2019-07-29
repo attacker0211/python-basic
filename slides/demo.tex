@@ -38,8 +38,34 @@
     \item Hỗ trợ lập trình hướng cấu trúc, lập trình hướng cấu trúc và lập trình hàm (yếu)
   \end{itemize}
 \end{frame}
+
+\begin{frame}[fragile]{Basic Input/Output (Nhập xuất cơ bản)}
+  \begin{verbatim}
+    # Input (Nhập)
+    x = input()
+
+    # Output (Xuất)
+    print(x)
+  \end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Các phép toán}
+\begin{itemize}
+  \item Python hỗ trợ các phép toán $+, -, *, /$ (chia lấy kết quả float), $//$ (chia lấy phần nguyên, kết quả int), $**$ (lên lũy thừa).
+
+  \item Các phép biến đổi bit: $\&$ (AND), $|$ (OR), $\ \^$ (XOR).
+
+  \item Đối với biến logic có \textbf{and, or, not}.
+
+  \item Các phép toán so sánh $<$ (nhỏ hơn), $>$ (lớn hơn), $<=$ (nhỏ hơn hoặc bằng), $>=$ (lớn hơn hoặc bằng), $==$ (bằng)
+
+\end{itemize}
+\end{frame}
+
 \begin{frame}[fragile]{Các kiểu dữ liệu}
-  \item Python tạo kiểu động (dynamically typed)
+  \begin{itemize}
+    \item Python tạo kiểu động (dynamically typed)
+  \end{itemize}
   \begin{columns}
     \begin{column}{0.4\textwidth}
       \begin{verbatim}
@@ -67,7 +93,7 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}[fragile]{Các kiểu dữ liệu}
+\begin{frame}[fragile]{Các kiểu dữ liệu: Boolean}
   \begin{columns}
     \begin{column}{0.4\textwidth}
       \begin{verbatim}
@@ -91,7 +117,7 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}[fragile]{Các kiểu dữ liệu}
+\begin{frame}[fragile]{Các kiểu dữ liệu: String (Chuỗi)}
   \begin{itemize}
     \item Python
     \begin{verbatim}
@@ -106,20 +132,60 @@
       using namespace std;
 
       int main() {
-      cout << "PiMA 2019 'Deep Learning'" << endl;
+        string s = "PiMA 2019 'Deep Learning'";
+      }
+    \end{verbatim}
+  \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Các kiểu dữ liệu: List (Danh sách)}
+
+  \begin{itemize}
+    \item Python
+    \begin{verbatim}
+    x = [1, 2, 3, 4, 5]
+    # List can be nested (danh sách có thể lồng vào nhau)
+    x = [[1, 2, 3], [4, 5, 6]]
+
+    ## Có thể có nhiều kiểu dữ liệu trong cùng 1 danh sách
+    x = [[3.14, 2], 3 + 4j, [5, 6]]
+    \end{verbatim}
+    \item C++
+    \begin{verbatim}
+      #include <iostream>
+      #include <vector>
+      using namespace std;
+      int main() {
+        int arr[] = {1, 2, 3, 4, 5, 6};
+        vector <double> a {3.14, 2.71, 2.11};
       }
     \end{verbatim}
   \end{itemize}
 \end{frame}
 
-
-\begin{frame}[fragile]{Các kiểu dữ liệu}
-
-\begin{itemize}
-\item List (Danh sách)
-
-\end{itemize}
+\begin{frame}[fragile]{Các kiểu dữ liệu: Dictionary (Từ Điển)}
+  \begin{verbatim}
+    x = {"P": "Project",
+         "i": "in",
+         "M": "Mathematics",
+         "A": "Applications"}
+  \end{verbatim}
 \end{frame}
+
+\begin{frame}[fragile]{Các kiểu dữ liệu: Tuple}
+  \begin{verbatim}
+    point = (1, 2, 3)
+
+    # Lấy ra giá trị từ tuple
+    x, y, z = point
+  \end{verbatim}
+
+
+  \only<2>{\Large Tuple vs List: điểm giống và khác nhau giữa List và Tuple là gì?}
+\end{frame}
+
 
 \section{Introduction}
 \begin{frame}[fragile]{Metropolis}
