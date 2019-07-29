@@ -7,3 +7,4 @@ testc.cpp
 *.nav
 *.snm
 *.toc
+.ipynb_checkpoints
