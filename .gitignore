@@ -8,3 +8,4 @@ testc.cpp
 *.snm
 *.toc
 .ipynb_checkpoints
+runcpp.sh
