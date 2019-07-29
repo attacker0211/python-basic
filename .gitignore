@@ -1,0 +1,9 @@
+a.out
+testc.cpp
+*.swp
+*.swo
+*.bbl
+*.blg
+*.nav
+*.snm
+*.toc
