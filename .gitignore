@@ -7,5 +7,6 @@ testc.cpp
 *.nav
 *.snm
 *.toc
+*.vrb
 .ipynb_checkpoints
 runcpp.sh
